@@ -68,6 +68,7 @@
 + (id)elementFromXMLFilePath:(NSString *)fullPath;
 + (id)elementFromURL:(NSURL *)url __attribute__((deprecated));
 + (id)elementFromXMLData:(NSData *)data;
++ (id)elementFromXMLURL:(NSURL *)url;
 + (id)elementFromXMLDoc:(RXMLDocHolder *)doc node:(xmlNodePtr)node;
 
 + (id)elementFromHTMLString:(NSString *)xmlString encoding:(NSStringEncoding)encoding;

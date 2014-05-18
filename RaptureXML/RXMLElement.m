@@ -171,6 +171,10 @@
     return [[RXMLElement alloc] initFromXMLData:data];
 }
 
++ (id)elementFromXMLURL:(NSURL *)url{
+    return [[RXMLElement alloc] initFromXMLData:[NSData dataWithContentsOfURL:url]];
+}
+
 + (id)elementFromXMLDoc:(RXMLDocHolder *)doc node:(xmlNodePtr)node {
     return [[RXMLElement alloc] initFromXMLDoc:doc node:node];
 }
